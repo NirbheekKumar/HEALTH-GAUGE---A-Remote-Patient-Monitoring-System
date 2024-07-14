@@ -33,6 +33,7 @@ const SignupForm = () => {
       alert('Signup successful!');
       // navigate('/login');
     } catch (error) {
+      console.log(error)
       setError(error.message || 'An error occurred during signup.');
     } finally {
       setIsLoading(false);
